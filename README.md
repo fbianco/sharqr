@@ -10,6 +10,7 @@ network.
 
 Usage
 -----
+```
 sharqr.py [-h] [-p PORT] [-n NUM] [--interface {eth0,wlan0}] [-c] filename
 
 positional arguments:
@@ -23,15 +24,17 @@ optional arguments:
 --interface {eth0,wlan0}
                         Define on which interface to serve the file
 -c, --console         Print QR code in terminal instead of using GUI
+```
 
 **Note**: interface will be defined from your local available interfaces.
 
 Example
 -------
 
-`python sharqr.py --interface eth0 -p 8008 -n 1 -c ~/hello.world` will show a Qr
-Code directly in current tty and share the file **hello.world** through interface
-eth0 on port 8008 for only one request.
+`python sharqr.py --interface eth0 -p 8008 -n 1 -c ~/hello.world`
+
+Will show a Qr Code directly in current tty and share the file *hello.world*
+through interface eth0 on port 8008 for only one request.
 
 Requires
 --------
